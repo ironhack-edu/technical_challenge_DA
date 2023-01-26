@@ -35,3 +35,6 @@ In this challenge the dataset described fuel consumption registered from differe
 
 ![Temperature](https://user-images.githubusercontent.com/114177420/208911435-02ef0070-5600-4c95-9635-79d106c2f0ce.JPG)
 
+### To check on the Actual Power Bi Dashboards click on the link below:
+
+[**Dashboard click here**](https://app.powerbi.com/view?r=eyJrIjoiZDVlYjMzMzQtZWY1My00MWM1LTgyODUtZmVmN2M2OWQ3Mzk5IiwidCI6ImI0YjIzZDcxLTJjNGYtNDI2YS04NDZhLTcxNTgwYjMyNTBmMCIsImMiOjh9)
