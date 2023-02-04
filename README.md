@@ -1,5 +1,9 @@
 # Tech challenge
 
+You can see the visualizations in [this](https://public.tableau.com/views/Gastypeevaluation/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link) Tableau Dashboard.
+
+
+
 <p align="center"> 
 <img src="https://kamisetas.com/image/bordados/Cobi-Barcelona-92-parche.gif" alt="drawing" width="200"/>
 </p>
