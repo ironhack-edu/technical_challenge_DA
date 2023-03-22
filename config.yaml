@@ -1,0 +1,5 @@
+lib : '../src/lib/'
+pics: '../src/pics/'
+data: '../data/'
+models: '../models/'
+scalers: '../scalers/'
