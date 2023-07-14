@@ -26,68 +26,22 @@ We have saved some consumption data in a .csv, but… it would be very nice if y
 
 Show us your abilities and make yourself worth the amount of money you'd like to get paid. You have **3 hours** to turn the challenge in starting right now! 💸
 
-## What to do?
+## Cobify Tableau Story: https://public.tableau.com/app/profile/vrushali.kulkarni5437/viz/Cobify-TechChallenge/Story1?publish=yes
 
-### You should aim for:
+## Insights
 
-#### Exploratory data analysis
-
-- Get to know the domain
-- Explore your data
-- Clean your data
-- Take a look and find connections between data
-
-<i> Note: Above you have your data set in a folder but for further reference here is the data set source: https://www.kaggle.com/datasets/anderas/car-consume <i/>
-
-#### Visualization
-
-- Plot your data in a meaningful way
-
-#### Predictions
-
-- Do you have any hypothesis?
-- Can you make any kind of prediction: regression and/or classification?
-
-#### Storytelling
-
-- What metrics are you obtaining?
-- Explain your conclusions
-- Shape your new data and conclusions in such a way that is appealing to the listener and tells a story
+### Consumption by Distance by Gas type:
+![Consume by Distance by Gas type](https://github.com/vrushali92/technical_challenge_DA/assets/28844399/4c5aaa10-a811-48a3-a39a-85acd2e7b245)
 
 
-### Extra:
-#### Enrich your dataset
-
-- Add value: obtain related data by web scraping or with APIs.
-
-#### Database
-
-- Load the processed information into a database
-
-<br>
+### Consumption by Speed by Gas type:
+![Consume by Speed by Gas type](https://github.com/vrushali92/technical_challenge_DA/assets/28844399/0af8c148-be30-4db1-b8b2-5bb459ce5541)
 
 
-## Submission
+### Consumption by Outside temperature by Gas type:
+![Consume by Temp_Outside by Gas type](https://github.com/vrushali92/technical_challenge_DA/assets/28844399/d665151a-2545-4698-ab1b-328bc818296d)
 
-To deliver your proposal make a fork of the repo and when you are done make a pull request. 🤯
 
-<details>
-<summary>How to do a pull request</summary>
-<ol>
-    <li>Fork this repository</li>
-    <li>Clone it</li>
-    <li>Work on it</li>
-    <li>Push the changes to your fork</li>
-    <li>From your fork, click on Contribute</li>
-    <li>Open pull request</li>
-    <li>Name it:  [Name FamilyName] Tech challenge</li>
-</ol>
-</details>
+### Consumption by Inside temperature by Gas type:
+![Consume by Temperature Inside by Gas type](https://github.com/vrushali92/technical_challenge_DA/assets/28844399/e118ff24-d3e9-4582-a9da-06841440c455)
 
-Do not forget to add any PDF document, slides or anything you can think of.
-
-You can grab ideas from our instructors or create something with [streamlit](https://www.streamlit.io/) 🚀
-
-Go bezerk if you want to get this job, you will set the limits!
-
-_PD: even though this has an informal tone, this challenge is serious and very similar to those you will encounter in real life._
