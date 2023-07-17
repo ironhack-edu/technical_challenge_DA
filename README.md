@@ -1,4 +1,4 @@
-# Tech challenge
+# Car fuel consumption challenge
 
 Cobify is a company dedicated to people transport just like Uber, Lyft or even Cabify (who clearly stole our name).
 
