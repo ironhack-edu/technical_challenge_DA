@@ -1,4 +1,4 @@
-# Tech challenge
+# Tech challenge  :)
 
 <p align="center"> 
 <img src="https://kamisetas.com/image/bordados/Cobi-Barcelona-92-parche.gif" alt="drawing" width="200"/>
