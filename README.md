@@ -90,4 +90,4 @@ You can grab ideas from our instructors or create something with [streamlit](htt
 
 Go bezerk if you want to get this job, you will set the limits!
 
-_PD: even though this has an informal tone, this challenge is serious and very similar to those you will encounter in real life._
+_PD: even though this has an informal tone, this challenge is serious and very similar to those you will encounter in real life.
