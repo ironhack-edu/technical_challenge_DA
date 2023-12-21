@@ -1,93 +1,94 @@
-# Tech challenge
+# Tech challenge Solution
 
-<p align="center"> 
-<img src="https://kamisetas.com/image/bordados/Cobi-Barcelona-92-parche.gif" alt="drawing" width="200"/>
-</p>
-
-Cobify is a company dedicated to people transport just like Uber, Lyft or even Cabify (who clearly stole our name).
-
-Cobify was founded in 1992 coinciding with the Olympic Games hosted in Barcelona. Our company has always been known by:
-
-- Not having permits to drive people (we do know how to drive)
-- Using tricked-out high-end car
-
-In our home town, Barcelona, VTC licenses have appeared and we have been able to start being a legal company, because we do have licenses now. However, we still keep using tricked-out high-end cars.
-
-We are an old school company and data analysis falls far beyond our reach, and as we do not want to be on the news we want to know how you can help our business.
-
-#### A bit of history of the gas problem ⛽️
-
-Tricked-out cars use gas with a high cetane index, like unleaded 98 petrol in order to avoid delay/advancing in combustible injection (avoiding connecting rod pitting ), but we have started to embrace petrols that add ethanol in their formula, as they are cheaper and they use the same cetane index as more expensive petrol. Without going into further detail (we could write an actual book about this) we think that going green and being modern can be very expensive, as we have seen that cars use more petrol than they used to for each trip.
-
-#### Your challenge starts here 📈
-
-Now it is your turn: can you help us find the best combustible?
-We have saved some consumption data in a .csv, but… it would be very nice if you could add some more data. You can find data in the repo :-)
-
-Show us your abilities and make yourself worth the amount of money you'd like to get paid. You have **3 hours** to turn the challenge in starting right now! 💸
-
-## What to do?
-
-### You should aim for:
-
-#### Exploratory data analysis
-
-- Get to know the domain
-- Explore your data
-- Clean your data
-- Take a look and find connections between data
-
-<i> Note: Above you have your data set in a folder but for further reference here is the data set source: https://www.kaggle.com/datasets/anderas/car-consume <i/>
-
-#### Visualization
-
-- Plot your data in a meaningful way
-
-#### Predictions
-
-- Do you have any hypothesis?
-- Can you make any kind of prediction: regression and/or classification?
-
-#### Storytelling
-
-- What metrics are you obtaining?
-- Explain your conclusions
-- Shape your new data and conclusions in such a way that is appealing to the listener and tells a story
+## Python Libraries used:
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+- scikit-learn
 
 
-### Extra:
-#### Enrich your dataset
+## Workflow
 
-- Add value: obtain related data by web scraping or with APIs.
-
-#### Database
-
-- Load the processed information into a database
+### Data Exploring and Cleaning
+The dataframe I've been working with contains gas oil consumes (L/100km) of E10 oil and SP95 oil with different conditions: distance (km), average speed (km/h), temperature inside the car (°C), the temperature outside the car (°C) anything special that happened, if it was raining, if the air condition was on, if it was sunny enough that the car felt warm when started…. 
+<br>There are also two columns saying how much and which gas type was buoght. <br> 
+<br>
+In order to clean the dataframe I decided to:
+- Change the type of the variables in the columns *distance* and *consume* from *string* to *float*
+- Deleted rows with contraddictive information (for example about the AC)
+- Deleted the column *special* because it didn't add information to the dataser that weren't already expressed in other columns.
+- Deleted the columns *temp_inside*, *refill liters*, *refill gas* because they presented a lot of null values; also, weren't really impactful for the total consume
+- Added a column with ratio between consume and distance
+- Added a column to express the gas type as binary values (E10:0, SP98:1)
 
 <br>
+I also looked at the distributions of the *distance* and *speed* values and create functions to remove outliers for both.
+
+### Visualization
+
+Using Tableau I confronted Consume per Distance with Speed and Consume with Distance, using AC, rain and sun as filters. I didn't find a stable difference between the use of E10 and SP98
+
+Here's the link to the results : [Tableau](https://public.tableau.com/app/profile/lucia.aguzzoni/viz/Tech_Challenge_17031784370450/Story2?publish=yes)
 
 
-## Submission
+### Prediction of E10 and SP98 consumes through Linear Regression
 
-To deliver your proposal make a fork of the repo and when you are done make a pull request. 🤯
+To confront the consume for E10 and SP98 I created a linear regression model using the values in the dataframe. <br>
 
-<details>
-<summary>How to do a pull request</summary>
-<ol>
-    <li>Fork this repository</li>
-    <li>Clone it</li>
-    <li>Work on it</li>
-    <li>Push the changes to your fork</li>
-    <li>From your fork, click on Contribute</li>
-    <li>Open pull request</li>
-    <li>Name it:  [Name FamilyName] Tech challenge</li>
-</ol>
-</details>
+Then I created a dataframe of 500 rows with random values of distance, speed, temperature outside the car, AC, rain/sun and I predicted the consume for all these cases for both E10 and SP98 using the linear regression model. I repeated this process 15 times and calculated each time the difference between average E10 consumes and average SP98 consume; these were the result:
 
-Do not forget to add any PDF document, slides or anything you can think of.
+case 1 <br>
+Predicted consume value with E10 is 5.183 liters <br>
+Predicted consume value with SP98 is 5.156 liters <br>
+case 2 <br>
+Predicted consume value with E10 is 5.225 liters <br>
+Predicted consume value with SP98 is 5.198 liters <br>
+case 3 <br>
+Predicted consume value with E10 is 5.228 liters <br>
+Predicted consume value with SP98 is 5.201 liters <br>
+case 4 <br>
+Predicted consume value with E10 is 5.24 liters <br>
+Predicted consume value with SP98 is 5.213 liters <br>
+case 5 <br>
+Predicted consume value with E10 is 5.233 liters <br>
+Predicted consume value with SP98 is 5.206 liters <br>
+case 6 <br>
+Predicted consume value with E10 is 5.228 liters <br>
+Predicted consume value with SP98 is 5.201 liters <br>
+case 7 <br>
+Predicted consume value with E10 is 5.232 liters <br>
+Predicted consume value with SP98 is 5.205 liters <br>
+case 8 <br>
+Predicted consume value with E10 is 5.197 liters <br>
+Predicted consume value with SP98 is 5.171 liters <br>
+case 9 <br>
+Predicted consume value with E10 is 5.208 liters <br>
+Predicted consume value with SP98 is 5.181 liters <br>
+case 10 <br>
+Predicted consume value with E10 is 5.243 liters <br>
+Predicted consume value with SP98 is 5.216 liters <br>
+case 11 <br>
+Predicted consume value with E10 is 5.28 liters <br>
+Predicted consume value with SP98 is 5.253 liters <br>
+case 12 <br>
+Predicted consume value with E10 is 5.24 liters <br>
+Predicted consume value with SP98 is 5.214 liters <br>
+case 13 <br>
+Predicted consume value with E10 is 5.205 liters <br>
+Predicted consume value with SP98 is 5.178 liters <br>
+case 14 <br>
+Predicted consume value with E10 is 5.183 liters <br>
+Predicted consume value with SP98 is 5.157 liters <br>
+case 15 <br>
+Predicted consume value with E10 is 5.218 liters <br>
+Predicted consume value with SP98 is 5.192 liters <br> <br>
+On Average, the difference between predicted consume value with E10 and predicted consume value with SP98 was 0.03 liters.
 
-You can grab ideas from our instructors or create something with [streamlit](https://www.streamlit.io/) 🚀
+## Conclusions
+It seems that the E10 oil consume a little bit more than SP98. Anyway, since E10 is generally cheaper than SP98 it may be more convenient to use it. <br>
+I think it would be better to spend more time improving the consume prediction and then extract precise information about the cost of E10 and SP98 to get a more accurate answer.
 
-Go bezerk if you want to get this job, you will set the limits!
 
-_PD: even though this has an informal tone, this challenge is serious and very similar to those you will encounter in real life._
+
+
