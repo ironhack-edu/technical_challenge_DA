@@ -22,7 +22,7 @@ In order to clean the dataframe I decided to:
 - Added a column with ratio between consume and distance
 - Added a column to express the gas type as binary values (E10:0, SP98:1)
 
-<br> <br>
+<br>
 I also looked at the distributions of the *distance* and *speed* values and create functions to remove outliers for both.
 
 ### Visualization
@@ -86,7 +86,8 @@ Predicted consume value with SP98 is 5.192 liters <br> <br>
 On Average, the difference between predicted consume value with E10 and predicted consume value with SP98 was 0.03 liters.
 
 ## Conclusions
-It seems that the E10 oil consume a little bit more than SP98. Anyway, since E10 is generally cheaper than SP98 it may be more convenient to use it.
+It seems that the E10 oil consume a little bit more than SP98. Anyway, since E10 is generally cheaper than SP98 it may be more convenient to use it. <br>
+I think it would be better to spend more time improving the consume prediction and then extract precise information about the cost of E10 and SP98 to get a more accurate answer.
 
 
 
